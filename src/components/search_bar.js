@@ -12,13 +12,13 @@ const SearchBar = () =>{
 class SearchBar extends Component{
     constructor(props){
         super(props);
-        this.state = {inputVal : "default"}
+        this.state = {term : ''}
     }
     onInputChange = (event)=>{
-        this.setState({inputVal : event.target.value});
+        this.setState({term : event.target.value});
     }
     render(){
-        return <input value={this.state.inputVal} 
+        return <input value={this.state.term} 
         onChange={ this.onInputChange } />;
     }
 }
