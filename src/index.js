@@ -13,3 +13,11 @@ ReactDOM.render(
     <App />
   </Provider>
   , document.querySelector('.container'));
+import { combineReducers } from 'redux';
+import BookReducer from './reducers/reducer_books';
+
+const rootReducer = combineReducers({
+  books: BookReducer
+});
+
+export default rootReducer;
