@@ -1,7 +1,7 @@
 // action creator 
-export function SelectBook(title){
+export function SelectBook(payload){
     return { 
-        type: 'selectBook',
-        title 
+        type: 'BOOK_SELECTED',
+        payload 
     } 
 }
